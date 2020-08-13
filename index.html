@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/nolan/64/edit--v1.png"
+    />
+    <title>Twitter Clone</title>
+  </head>
+  <body>
+    <header>
+      <h1>Twitter Clone</h1>
+    </header>
+    <form class="login visible invisible">
+      <h2 id="loginTitle">Log In</h2>
+      <label for="username">Username</label><br />
+      <input type="text" id="username" name="fname" /><br />
+      <label for="password">Password</label><br />
+      <input type="password" id="password" name="password" /><br /><br />
+      <input type="submit" value="Log In" id="loginBtn" />
+    </form>
+    <section class="happening noHappening">
+      <h2>What's Happening ?</h2>
+      <textarea name="text-area" id="text-area" cols="40" rows="5"></textarea
+      ><br />
+      <input type="submit" value="Tweet" id="submit" />
+    </section>
+    <ul id="publications"></ul>
+    <script src="app.js"></script>
+  </body>
+</html>
